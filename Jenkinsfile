@@ -14,7 +14,7 @@ stages {
          sh '''
            echo "Building app"
          '''
-           bat(/"${M3}\bin\mvn" -Dmaven.test.failure.ignore clean install/)       
+           bat(/"${M3}\bin\mvn" -f demo\pom.xml -Dmaven.test.failure.ignore clean install/)       
        }
      }
 }
